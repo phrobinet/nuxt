@@ -6,12 +6,12 @@ phases:
       nodejs: 16
       commands:
         - npm install npm@latest
-    preBuild:
-      commands:
-        - npm install
-    build:
-      commands:
-        - npm run generate
+  preBuild:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run generate
 artifacts:
   # IMPORTANT - Please verify your build output directory
   baseDirectory: dist/
