@@ -12,7 +12,7 @@ phases:
       - npm run generate
   post_build:
     commands:
-      - aws s3 sync dist s3://philippe-website --delete
+      - aws s3 sync dist s3://myphilippe --delete
 artifacts:
   # IMPORTANT - Please verify your build output directory
   baseDirectory: dist/
